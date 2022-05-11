@@ -1,0 +1,19 @@
+.header__nav{
+	grid-column: container-start / container-end;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 8rem;
+	
+	&--links {
+		background-color: var(--color-primary);
+		display: flex;
+		align-items: center;
+		padding: 2rem;
+	}
+
+	&--language {
+		display: flex;
+		align-items: center;
+	}
+}

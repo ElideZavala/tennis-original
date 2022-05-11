@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color-primary: #fff;
+  --color-secondary: #26762c;
+  --color-secondary-m: #018141;
+  --color-tertiary: #666666;
+  --color-tertiary-m: #999;
+  --color-quaternary:#003049;
+  --color-quinary: #66cc33;
+  --color-baseline: #FF3317;
+  --color-sixtary: #ff7606;
+  --color-seventery: #f2f2f2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 16.66667rem) [col-end]) [center-end] 1fr [container-end];
+  grid-template-rows: min-content 90vh repeat(9, min-content);
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  padding: 5px;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.header__nav {
+  grid-column: container-start/container-end;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: rem;
+}
+.header__nav--links {
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.header__nav--language {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=main-style.css.map */
