@@ -113,6 +113,7 @@ i {
   justify-content: start;
   height: 70vh;
   padding: 0 3rem;
+  overflow: hidden;
 }
 .showcase::after {
   content: "";
@@ -189,7 +190,6 @@ i {
   margin-bottom: 2rem;
   letter-spacing: 0.3px;
   font-weight: 500;
-  overflow-wrap: hidden;
 }
 .history__text--info__par {
   font-size: calc(0.5rem + 0.5vw);
