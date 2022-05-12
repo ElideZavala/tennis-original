@@ -6,6 +6,7 @@
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	overflow: hidden;
 	
 	&__nav,
 	&__social {
@@ -17,7 +18,7 @@
 			display: flex;
 			margin-right: 3rem;
 			padding: 1rem 0;
-			color: var(--color-sixtary) !important;  //ver la forma de cambiar. 
+			color: var(--color-sixtary);  //ver la forma de cambiar. 
 			letter-spacing: 1px;
 		}
 	}
@@ -42,9 +43,22 @@
 		}
 	}
 
-	// *-*-*-*-*-*-*-*-*-*- The 800px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
-	@include media-tablet {	
-		
+	// *-*-*-*-*-*-*-*-*-*- The 600px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
+	@include media-medium {	
+		height: 40vh;
+		&__nav {
+			&--links {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		&__log {
+			top: 1rem;
+			// left: 1rem;
+			// align-items: space-between;
+			// justify-content: flex-end;
+		}
 	}
 
 }

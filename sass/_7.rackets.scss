@@ -87,15 +87,16 @@
 				}
 				&--num {
 					position: absolute;
-					top: 1rem;
-					left: 1rem;
-					width: 2rem;
-					height: 2rem;
+					top: 1vw;
+					left: 1vw;
+					width: 2vw;
+					height: 2vw;
 					border-radius: 50%;
 					background-color: var(--color-secondary);
 					color: var(--color-primary);
 					text-align: center;
-					line-height: 2;
+					padding: 0.5vw;
+					font-size: 1vw;
 				}
 			}
 		}

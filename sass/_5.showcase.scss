@@ -1,12 +1,10 @@
 .showcase {
-	// position: absolute;
 	grid-column: center-start / 7;
 	display: flex;
 	align-items: center;
 	justify-content: start;
 	height: 70vh;
 	padding: 0 3rem;
-	// @extend %sec-padding;
 
 	&::after {
 		content: "";
@@ -44,11 +42,25 @@
 
 	// *-*-*-*-*-*-*-*-*-*- The 800px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
 	@include media-tablet { 
-		margin-left: 2rem;
+		margin-left: 3rem;
+		&__content--links  {
+			margin-top: 1rem;
+		}
 	}
 
 	// *-*-*-*-*-*-*-*-*-*- The 600px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
 	@include media-medium { 
 		height: 40vh;
+	}
+
+	// *-*-*-*-*-*-*-*-*-*- The 400px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
+	@include media-small {
+		&__content--title {
+			font-size: font-size(font-size-medium); 
+
+			span {
+				margin-left: .5rem;
+			}
+		}
 	}
 }

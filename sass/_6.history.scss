@@ -6,7 +6,6 @@
 	height: 35vh;
 	position: relative;
 	overflow: hidden;
-	// overflow-wrap: break-word;
 
 	&__text {
 		display: flex;
@@ -27,6 +26,7 @@
 				margin-bottom: 2rem;
 				letter-spacing: .3px;
 				font-weight: 500;	
+				overflow-wrap: hidden;
 			}
 			
 			&__par {
@@ -77,10 +77,6 @@
 
 	// *-*-*-*-*-*-*-*-*-*- The 600px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
 	@include media-medium { 
-		// display: flex;
-		// align-items: center;
-		// justify-content: center;
-		// background-color: red;
 		position: absolute;
 		bottom: -30vh;
 
@@ -92,8 +88,6 @@
 				position: absolute;
 				top: 0;
 				left: 0;
-				display: flex;
-				justify-content: center;
 				width: 100%;
 				margin-right: 0rem;
 				padding: .5rem;
@@ -102,10 +96,8 @@
 			&--info {
 				margin: 3rem 1rem;
 				&__accessories {
-					margin-top: 2rem;
-				}
-				&__par {
-					// margin-top: 3rem;
+					margin-top: 1.8rem;
+					font-size: 2rem;
 				}
 			}
 		} 
@@ -113,6 +105,15 @@
 		&__link {
 			bottom: 0;
 			right: 10rem;
+		}
+	}
+
+	// *-*-*-*-*-*-*-*-*-*- The 400px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
+	@include media-small {
+		&__text {
+			&--info__accessories {
+					font-size: 1.5rem;
+			}
 		}
 	}
 }
