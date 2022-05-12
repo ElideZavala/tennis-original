@@ -21,11 +21,11 @@
 
 	&__content {
 		position: relative;
-
+		
 		&--title {
 			font-size: font-size(font-size-large); 
 			color: var(--color-primary);
-
+			
 			span {
 				color: var(--color-secondary);
 				font-weight: 800;

@@ -1,0 +1,41 @@
+.rackets {
+	
+	&__about {
+		display: grid;
+		grid-column: container-start / 4;
+		height: 50vh;
+		background-color: red;
+		background: linear-gradient(rgba(0, 0, 0, .098), rgba(0, 0, 0, .098)), url(../img/rackets/image-1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		&--field {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-evenly;
+			margin: 0 4rem 0 20rem;
+			// overflow-wrap: break-word;
+			
+			&__title {
+				font-size: 3rem;
+				color: var(--color-primary);
+				
+				span{
+					word-wrap: break-word;
+					margin-left: 1rem;
+				}
+			}
+
+			// &__para {
+				
+			// }
+		}
+	}
+	
+	&__types {
+		display: grid;
+		grid-column: 4 / container-end;
+		background-color: blue;
+	}
+}
