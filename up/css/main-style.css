@@ -199,7 +199,25 @@ a:visited {
   letter-spacing: 1px;
 }
 .rackets__about--field__oval img {
-  padding-right: 1rem;
+  padding-right: 2rem;
+}
+.rackets__about--field__play {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.rackets__about--field__play img:first-child {
+  transform: rotate(180deg);
+  padding: 1rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.rackets__about--field__play img:last-child {
+  margin-left: 1rem;
 }
 .rackets__types {
   display: grid;

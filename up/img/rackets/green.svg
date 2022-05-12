@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 57.1 (101010) - https://sketch.com -->
+    <title>95304AC6-28C2-4C27-9159-4F3D0CCE9B13</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="27" cy="27" r="27"></circle>
+        <filter x="-29.6%" y="-20.4%" width="159.3%" height="159.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage---Tennis" transform="translate(-257.000000, -1529.000000)" fill-rule="nonzero">
+            <g id="Group-9" transform="translate(256.500000, 1560.000000) scale(-1, 1) translate(-256.500000, -1560.000000) translate(193.000000, 1533.000000)">
+                <g id="Group-Copy-2" transform="translate(27.000000, 27.000000) scale(1, -1) rotate(180.000000) translate(-27.000000, -27.000000) ">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#CBE346" xlink:href="#path-1"></use>
+                    </g>
+                    <polygon id="Path-2" fill="#FFFFFF" points="23 21 23 34 32 27.5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
