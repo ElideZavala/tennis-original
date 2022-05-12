@@ -6,7 +6,7 @@ html {
 	--color-primary: #fff;
 	--color-secondary: #cbe346; 
 	--color-tertiary: #f06a0a;
-	--color-quaternary:#003049;
+	--color-quaternary:#787878;
 	--color-quinary: #66cc33;
 	--color-sixtary: #000;
 	// --color-seventery: #f2f2f2;
@@ -16,7 +16,7 @@ html {
 $font-sizes: (
 	'font-size-small': calc(.3rem + 0.5vw),
 	'font-size-regular': calc(.5rem + 0.5vw),
-	'font-size-medium': calc(1rem + 0.5vw),
+	'font-size-medium': calc(1.5rem + 2vw),
 	'font-size-large': calc(1.5rem + 2.5vw),
 	'font-size-xlarge': calc(2rem + 3vw),
 );

@@ -21,12 +21,9 @@
 // buttons
 %buttom {
 	padding: 1rem 2rem;
-	background-color: transparent;
-	border: 1px solid var(--color-primary);
 	text-transform: uppercase;
 	border-radius: 4rem;
 	font-size: font-size(font-size-regular); 
-	color: var(--color-primary);
 	letter-spacing: 1px;
 	cursor: pointer;
 	transition: all 0.4s ease-in-out;

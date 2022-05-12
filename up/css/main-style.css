@@ -11,7 +11,7 @@ html {
   --color-primary: #fff;
   --color-secondary: #cbe346;
   --color-tertiary: #f06a0a;
-  --color-quaternary:#003049;
+  --color-quaternary:#787878;
   --color-quinary: #66cc33;
   --color-sixtary: #000;
 }
@@ -121,20 +121,51 @@ a:visited {
 }
 .showcase__content--links {
   margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .history {
   grid-column: center-start/container-end;
   display: flex;
   justify-content: center;
-  place-items: center;
-  height: 40vh;
+  place-items: start;
+  height: 30vh;
+  position: relative;
 }
 .history__text {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 4rem;
+  align-items: space-between;
+  margin: 3rem;
+}
+.history__text--title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-secondary);
+  margin-right: 1rem;
+  padding: 1rem;
+}
+.history__text--info__accessories {
+  font-size: calc(1.5rem + 2vw);
+  margin-bottom: 2rem;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+.history__text--info__par {
+  font-size: calc(0.5rem + 0.5vw);
+  letter-spacing: 1px;
+  color: var(--color-quaternary);
+  line-height: 2;
+}
+.history__link {
+  position: absolute;
+  border: 1px solid var(--color-sixtary);
+  bottom: 5rem;
+  right: 10rem;
+}
+.history__link img {
+  margin-left: 4rem;
 }
 
 .header__nav--background {
@@ -143,19 +174,16 @@ a:visited {
   background-attachment: fixed;
 }
 
-.showcase__content--links {
+.showcase__content--links, .history__link {
   padding: 1rem 2rem;
-  background-color: transparent;
-  border: 1px solid var(--color-primary);
   text-transform: uppercase;
   border-radius: 4rem;
   font-size: calc(0.5rem + 0.5vw);
-  color: var(--color-primary);
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.showcase__content--links:hover {
+.showcase__content--links:hover, .history__link:hover {
   background-color: var(--color-secondary);
   color: var(--color-sixtary);
 }/*# sourceMappingURL=main-style.css.map */
