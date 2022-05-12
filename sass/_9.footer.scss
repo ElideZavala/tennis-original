@@ -1,0 +1,24 @@
+.footer {
+	grid-column: container-start / container-end;
+	height: 25vh;
+	background-color: var(--color-secondary);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10rem;
+
+	&__nav {
+		&--links {
+			display: flex;
+			margin-right: 3rem;
+			padding: 1rem 0;
+			color: var(--color-sixtary) !important;  //ver la forma de cambiar. 
+		}
+	}
+
+	&__social {
+		&--icons {
+			margin-right: .5rem;
+		}
+	}
+}

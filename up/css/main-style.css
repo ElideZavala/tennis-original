@@ -207,6 +207,33 @@ a:visited {
   background-color: blue;
 }
 
+.player {
+  grid-column: container-start/container-end;
+  background-image: url(../img/player/image-1.bmp);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  grid-column: container-start/container-end;
+  height: 25vh;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem;
+}
+.footer__nav--links {
+  display: flex;
+  margin-right: 3rem;
+  padding: 1rem 0;
+  color: var(--color-sixtary) !important;
+}
+.footer__social--icons {
+  margin-right: 0.5rem;
+}
+
 .header__nav--background {
   background-size: cover;
   background-repeat: no-repeat;
