@@ -4,13 +4,23 @@
 // *-*-*-*-*-*-*-*-*-*-*-* Colors *-*-*-*-*-*-*-*-*-*-*-*-*
 html {
 	--color-primary: #fff;
-	--color-secondary: #26762c; 
-	--color-secondary-m: #018141;
-	--color-tertiary: #666666;
-	--color-tertiary-m: #999;
+	--color-secondary: #cbe346; 
+	--color-tertiary: #f06a0a;
 	--color-quaternary:#003049;
 	--color-quinary: #66cc33;
-	--color-baseline: #FF3317;
-	--color-sixtary: #ff7606;
-	--color-seventery: #f2f2f2;
+	--color-sixtary: #000;
+	// --color-seventery: #f2f2f2;
 }
+
+// *-*-*-*-*-*-*-*-*-*- Font Size *-*-*-*-*-*-*-*-*-*-*-*-*
+$font-sizes: (
+	'font-size-small': calc(.3rem + 0.5vw),
+	'font-size-regular': calc(.5rem + 0.5vw),
+	'font-size-medium': calc(1rem + 0.5vw),
+	'font-size-large': calc(1.5rem + 2.5vw),
+	'font-size-xlarge': calc(2rem + 3vw),
+);
+
+@function font-size($font-size-style) {
+	@return map-get($font-sizes, $font-size-style) 
+};

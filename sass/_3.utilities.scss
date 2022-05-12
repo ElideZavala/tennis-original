@@ -1,4 +1,8 @@
 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
 	display: grid; // 6 * 16.66667 = 100.00002 * 10 = 1000.00002px // 
 	grid-template-columns:
@@ -25,4 +29,5 @@ a:visited {
 	text-decoration: none;
 	outline: none;
 	box-shadow: none;
+	color: var(--color-primary);
 }

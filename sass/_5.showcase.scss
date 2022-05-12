@@ -1,0 +1,56 @@
+.showcase {
+	// position: absolute;
+	grid-column: center-start / 7;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	height: 70vh;
+	padding: 0 3rem;
+	// @extend %sec-padding;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 8rem;
+		height: 100vh;
+		background-color: #fff;
+		border: 2px solid var(--color-primary)
+
+	}
+
+	&__content {
+		position: relative;
+
+		&--title {
+			font-size: font-size(font-size-large); 
+			color: var(--color-primary);
+
+			span {
+				color: var(--color-secondary);
+				font-weight: 800;
+				margin-left: 1rem;
+			}
+		}
+
+		&--links {
+			margin-top: 2rem;
+			padding: 1rem 2rem;
+			background-color: transparent;
+			border: 1px solid var(--color-primary);
+			text-transform: uppercase;
+			border-radius: 4rem;
+			font-size: font-size(font-size-regular); 
+			color: var(--color-primary);
+			letter-spacing: 1px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				background-color: var(--color-secondary);
+				color: var(--color-sixtary)
+			}
+		}
+		
+	}
+}
