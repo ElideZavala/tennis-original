@@ -1,6 +1,3 @@
-// *-*-*-*-*-*-*-*-*-*-*-* Font-Size *-*-*-*-*-*-*-*-*-*-*-*-*
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
 // *-*-*-*-*-*-*-*-*-*-*-* Colors *-*-*-*-*-*-*-*-*-*-*-*-*
 html {
 	--color-primary: #fff;
@@ -9,7 +6,6 @@ html {
 	--color-quaternary:#787878;
 	--color-quinary: #66cc33;
 	--color-sixtary: #000;
-	// --color-seventery: #f2f2f2;
 }
 
 // *-*-*-*-*-*-*-*-*-*- Font Size *-*-*-*-*-*-*-*-*-*-*-*-*
@@ -23,4 +19,17 @@ $font-sizes: (
 
 @function font-size($font-size-style) {
 	@return map-get($font-sizes, $font-size-style) 
+};
+
+
+// *-*-*-*-*-*-*-*-*-*- Break Points *-*-*-*-*-*-*-*-*-*-*-*-*
+$break-points: ( 
+	"break-point-small": 400px,
+	"break-point-medium": 600px,
+	"break-point-tablet": 800px,
+	"break-point-desktop": 950px,
+);
+
+@function break-point($break-point-limit) {
+	@return map-get($break-points, $break-point-limit)
 };

@@ -5,7 +5,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 10rem;
+	position: relative;
+	
+	&__nav,
+	&__social {
+		margin-left: 5vw;
+	}
 
 	&__nav {
 		&--links {
@@ -16,10 +21,30 @@
 			letter-spacing: 1px;
 		}
 	}
-
+	
 	&__social {
 		&--icons {
-			margin-right: .5rem;
+			margin-right: 1rem;
 		}
 	}
+
+	&__log {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		right: 3rem;
+		cursor: pointer;
+		
+		& img {
+			width: 4.5vw;
+			height: 4.5vw;
+		}
+	}
+
+	// *-*-*-*-*-*-*-*-*-*- The 800px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
+	@include media-tablet {	
+		
+	}
+
 }

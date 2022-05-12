@@ -1,10 +1,8 @@
 .rackets {
-	
 	&__about {
 		display: grid;
 		grid-column: container-start / 4;
 		height: 60vh;
-		background-color: red;
 		background: linear-gradient(rgba(0, 0, 0, .098), rgba(0, 0, 0, .098)), url(../img/rackets/image-1.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -14,7 +12,8 @@
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: space-evenly;
-			margin: 0 8rem 0 18rem;
+			margin: 0 8vw 0 12vw;
+			line-height: 1.2;
 			// overflow-wrap: break-word;
 			
 			&__title {
@@ -37,6 +36,7 @@
 			&__oval {
 				img {
 					padding-right: 2rem;
+					cursor: pointer;
 				}
 			}
 
@@ -67,18 +67,24 @@
 	&__types {
 		display: grid;
 		grid-column: 4 / container-end;
-		background-color: blue;
+		background-color: var(--color-sixtary);
+		overflow: hidden;
 
 		&--imgs {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			margin-left: 8rem;
+			margin-left: 9vw;
 
 			&__img {
-				transform: scale(1.3);
+				// transform: scale(1.2);
 				position: relative;
-
+				
+				img {
+					height: 20vw;
+					width: 17vw;
+					// transform: scale(1.2);
+				}
 				&--num {
 					position: absolute;
 					top: 1rem;
@@ -90,6 +96,52 @@
 					color: var(--color-primary);
 					text-align: center;
 					line-height: 2;
+				}
+			}
+		}
+	}
+
+	// *-*-*-*-*-*-*-*-*-*- The 950px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
+	@include media-desktop { 
+		&__about {
+			&--field {
+				margin: 1rem ;
+			}
+		}
+
+		&__types {
+			&--imgs {
+				margin-left: 1rem;
+				&__img {
+					transform: scale(1);
+				}
+			}
+		}
+
+	}
+	//*-*-*-*-*-*-*-*-*-*- The 800px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
+	@include media-tablet { 
+		// display: grid;
+		&__about {
+			grid-column: center-start / center-end;
+
+			&--field {	
+				align-items: center;
+			}
+		}
+
+		&__types {
+			grid-column: center-start / center-end;
+			height:40vh;
+			&--imgs {
+				display: flex;
+				// flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				margin-left: 1rem;
+				
+				&__img {
+					transform: scale(1.8);
 				}
 			}
 		}

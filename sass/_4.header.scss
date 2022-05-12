@@ -4,24 +4,23 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	overflow: hidden;
 	font-size: font-size(font-size-regular); 
 	letter-spacing: 1.4px;
-
+	
 	&--log {
 		position: absolute;
-		top: 2rem;
-		left: 3rem;
+		top: 3vh;
+		left: 2vw;
 	}
-
+	
 	&--background {
 		position: absolute;
+		background-image: url(../img/showcase/image-1.png);
+		height: 100vh;
 		top: 0;
 		left: 0;
 		width: 100vw;
-		height: 100vh;
 		@extend %bg;
-		background-image: url(../img/showcase/image-1.png);
 		z-index: -10;
 		border-bottom: 4px solid #000;
 	}
@@ -50,5 +49,27 @@
 		display: flex;
 		align-items: center;
 		margin-right: 2rem;
+	}
+
+	// *-*-*-*-*-*-*-*-*-*- The 600px Mark Break Point *-*-*-*-*-*-*-*-*-*-*-*-*
+	@include media-medium { 
+		flex-direction: column;
+
+		&--links {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			// padding: 0;
+			overflow: hidden;
+		}
+		
+		&--language {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			padding: 1rem;
+		}
+
 	}
 }
