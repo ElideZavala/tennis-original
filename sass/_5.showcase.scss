@@ -35,21 +35,7 @@
 
 		&--links {
 			margin-top: 2rem;
-			padding: 1rem 2rem;
-			background-color: transparent;
-			border: 1px solid var(--color-primary);
-			text-transform: uppercase;
-			border-radius: 4rem;
-			font-size: font-size(font-size-regular); 
-			color: var(--color-primary);
-			letter-spacing: 1px;
-			cursor: pointer;
-			transition: all 0.3s ease-in-out;
-
-			&:hover {
-				background-color: var(--color-secondary);
-				color: var(--color-sixtary)
-			}
+			@extend %buttom;
 		}
 		
 	}

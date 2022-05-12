@@ -1,0 +1,15 @@
+.history {
+	grid-column: center-start / container-end;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	// align-items: space-around;
+	height: 40vh;
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 4rem;
+	}
+}

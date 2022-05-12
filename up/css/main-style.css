@@ -66,6 +66,7 @@ a:visited {
   height: 100vh;
   background-image: url(../img/showcase/image-1.png);
   z-index: -10;
+  border-bottom: 4px solid #000;
 }
 .header__nav--links {
   display: flex;
@@ -120,6 +121,29 @@ a:visited {
 }
 .showcase__content--links {
   margin-top: 2rem;
+}
+
+.history {
+  grid-column: center-start/container-end;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  height: 40vh;
+}
+.history__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 4rem;
+}
+
+.header__nav--background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.showcase__content--links {
   padding: 1rem 2rem;
   background-color: transparent;
   border: 1px solid var(--color-primary);
@@ -129,15 +153,9 @@ a:visited {
   color: var(--color-primary);
   letter-spacing: 1px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .showcase__content--links:hover {
   background-color: var(--color-secondary);
   color: var(--color-sixtary);
-}
-
-.header__nav--background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }/*# sourceMappingURL=main-style.css.map */

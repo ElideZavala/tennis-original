@@ -23,6 +23,7 @@
 		@extend %bg;
 		background-image: url(../img/showcase/image-1.png);
 		z-index: -10;
+		border-bottom: 4px solid #000;
 	}
 	
 	&--links {
@@ -40,7 +41,7 @@
 				height: 20px;
 				width: 2px;
 				background-color: #fff;
-				transform: rotate(90deg);z
+				transform: rotate(90deg);
 			}
 		}
 	}
