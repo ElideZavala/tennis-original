@@ -3,7 +3,7 @@
 	&__about {
 		display: grid;
 		grid-column: container-start / 4;
-		height: 50vh;
+		height: 60vh;
 		background-color: red;
 		background: linear-gradient(rgba(0, 0, 0, .098), rgba(0, 0, 0, .098)), url(../img/rackets/image-1.png);
 		background-repeat: no-repeat;
@@ -14,22 +14,31 @@
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: space-evenly;
-			margin: 0 4rem 0 20rem;
+			margin: 0 8rem 0 18rem;
 			// overflow-wrap: break-word;
 			
 			&__title {
 				font-size: 3rem;
 				color: var(--color-primary);
+				font-weight: 500;
 				
 				span{
 					word-wrap: break-word;
-					margin-left: 1rem;
+					font-weight: 700;
 				}
 			}
 
-			// &__para {
-				
-			// }
+			&__par {
+				color: var(--color-primary);
+				line-height: 1.7;
+				letter-spacing: 1px;	
+			}
+
+			&__oval {
+				img {
+					padding-right: 1rem;
+				}
+			}
 		}
 	}
 	
